@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1023,
+    "name": "Simba",
+    "species": "Lion",
+    "age": 5,
+    "isEndangered": "True",
+    "habitat": "Savanna"
+  },
+
+  {
+    "id": 2041,
+    "name": "Ellie",
+    "species": "Elephant",
+    "age": 12,
+    "isEndangered": "True",
+    "habitat": "Jungle"
+  },
+
+  {
+    "id": 3567,
+    "name": "Rocky",
+    "species": "Eagle",
+    "age": 3,
+    "isEndangered": "False"
+    "habitat": "Arctic"
+  },
+
+  {
+    "id": 4791,
+    "name": "Sharky",
+    "species": "Shark",
+    "age": 8,
+    "isEndangered": "False",
+    "habitat": "Ocean"
+  },
+
+  {
+    "id": 5822,
+    "name": "Pingu",
+    "species": "Penguin",
+    "age": 4,
+    "isEndangered": "True",
+    "habitat": "Arctic"
+  }
+
+]
