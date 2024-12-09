@@ -1,6 +1,6 @@
 [
   {
-    "id": 1023,
+    "id": 1,
     "name": "Simba",
     "species": "Lion",
     "age": 5,
@@ -9,7 +9,7 @@
   },
 
   {
-    "id": 2041,
+    "id": 2,
     "name": "Ellie",
     "species": "Elephant",
     "age": 12,
@@ -18,7 +18,7 @@
   },
 
   {
-    "id": 3567,
+    "id": 3,
     "name": "Rocky",
     "species": "Eagle",
     "age": 3,
@@ -27,7 +27,7 @@
   },
 
   {
-    "id": 4791,
+    "id": 4,
     "name": "Sharky",
     "species": "Shark",
     "age": 8,
@@ -36,7 +36,7 @@
   },
 
   {
-    "id": 5822,
+    "id": 5,
     "name": "Pingu",
     "species": "Penguin",
     "age": 4,
