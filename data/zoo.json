@@ -22,7 +22,7 @@
     "name": "Rocky",
     "species": "Eagle",
     "age": 3,
-    "isEndangered": "False"
+    "isEndangered": "False",
     "habitat": "Arctic"
   },
 
