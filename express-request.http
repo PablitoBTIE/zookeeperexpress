@@ -10,6 +10,15 @@ DELETE http://localhost:3000/animals/3
 ###
 
 ### delete request to example server
-PUT http://localhost:3000/animals/put/3
+PUT http://localhost:3000/animals/3
+Content-Type: application/json
+
+{
+    "name": "Dawid",
+    "species": "Sigma",
+    "age": 12,
+    "isEndangered": "True",
+    "habitat": "Polska"
+}
 
 ###

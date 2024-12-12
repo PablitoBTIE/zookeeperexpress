@@ -11,6 +11,7 @@ app.get("/", (req,res) =>{
 
 app.get("/animals", AnimalsController.getAllAnimals)
 app.delete("/animals/:id", AnimalsController.deleteAnimal)
+app.put("/animals/put/:id", AnimalsController.updateAnimal)
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`)

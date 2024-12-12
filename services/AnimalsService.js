@@ -21,7 +21,15 @@ const AnimalsService = {
             JSON.stringify(animals, null, 2), "utf-8")
 
         return {message: `Animal ${animalId} delete`}
+    },
+
+    async updateAnimal(id, newAnimalData){
+        const {animal, index, animals} = await this.findAnimalById(id)
+        animals[index] = {...animal, ...newAnimalData}
+        await this.saveAnimals(animals)
+        return animals[index]
     }
+
 }
 
 export default AnimalsService
