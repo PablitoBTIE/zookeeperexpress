@@ -7,7 +7,6 @@
     "isEndangered": "True",
     "habitat": "Savanna"
   },
-
   {
     "id": 2,
     "name": "Ellie",
@@ -16,7 +15,6 @@
     "isEndangered": "True",
     "habitat": "Jungle"
   },
-
   {
     "id": 3,
     "name": "Rocky",
@@ -25,7 +23,6 @@
     "isEndangered": "False",
     "habitat": "Arctic"
   },
-
   {
     "id": 4,
     "name": "Sharky",
@@ -34,7 +31,6 @@
     "isEndangered": "False",
     "habitat": "Ocean"
   },
-
   {
     "id": 5,
     "name": "Pingu",
@@ -43,5 +39,4 @@
     "isEndangered": "True",
     "habitat": "Arctic"
   }
-
 ]
