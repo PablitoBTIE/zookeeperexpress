@@ -4,7 +4,7 @@ import path from "path"
 
 const filePath = path.resolve("data", "zoo.json")
 
-const AnimalsService = {
+const AnimalsServices = {
     async getAllAnimals() {
         const data = await fsPromises.readFile(filePath, 'utf-8')
         return JSON.parse(data)
@@ -32,7 +32,7 @@ const AnimalsService = {
 
 }
 
-export default AnimalsService
+export default AnimalsServices
 
 
 

@@ -1,5 +1,5 @@
 import express from 'express'
-import AnimalsController from './controllers/AnimalsController.js'
+import AnimalsController from './zookeeperii/controllers/AnimalsController.js'
 
 const app = express()
 const port = process.env.PORT || 3000
