@@ -10,6 +10,7 @@ app.get("/", (req,res) =>{
 })
 
 app.get("/animals", AnimalsController.getAllAnimals)
+app.get("/animals/:id", AnimalsController.getAnimalById)
 app.delete("/animals/:id", AnimalsController.deleteAnimal)
 app.put("/animals/put/:id", AnimalsController.updateAnimal)
 

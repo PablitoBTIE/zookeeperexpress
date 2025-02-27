@@ -22,6 +22,8 @@ const AnimalsController = {
         }
     },
 
+
+
     async updateAnimal(req, res){
         const animalId = parseInt(req.params.id)
         const newAnimal = req.body

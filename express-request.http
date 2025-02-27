@@ -4,6 +4,13 @@ GET http://localhost:3000/animals
 
 ###
 
+### GET request to example server
+
+
+GET http://localhost:3000/animals/2
+
+###
+
 ### delete request to example server
 DELETE http://localhost:3000/animals/3
 
