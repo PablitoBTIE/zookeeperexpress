@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import AnimalsServices from "../services/animalsServices";
 
 const AnimalsController = {
-    getAnimalById: undefined,
+
 
     async deleteAnimal(req: Request, res: Response): Promise<void> {
         const animalId: number = parseInt(req.params.id);
@@ -23,18 +23,6 @@ const AnimalsController = {
         } catch (err) {
             console.error(err);
             res.status(500).json({ message: "Failed to fetch animals" });
-        }
-    },
-
-    async addAnimal(req: Request, res: Response): Promise<void> {
-        const newAnimal = req.body;
-
-        try {
-            const addedAnimal = await AnimalsServices.addAnimal(newAnimal);
-            res.status(200).json(addedAnimal);
-        } catch (err) {
-            console.error(err);
-            res.status(500).json({ message: "Failed to add animal" });
         }
     },
 
