@@ -25,6 +25,19 @@ const AnimalsController = {
         }
     },
 
+    async addAnimal(req: Request, res: Response): Promise<void> {
+        const newAnimal = req.body;
+
+        try {
+            const addedAnimal = await AnimalsServices.addAnimal(newAnimal);
+            res.status(201).json(addedAnimal); // Return the added animal
+        } catch (err) {
+            console.error(err);
+            res.status(500).json({ message: "Failed to add animal" });
+        }
+    },
+
+
     async updateAnimal(req: Request, res: Response): Promise<void> {
         const animalId: number = parseInt(req.params.id);
         const newAnimal: any = req.body;  // you can replace `any` with a specific type for the animal object
