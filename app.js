@@ -17,3 +17,5 @@ app.put("/animals/put/:id", AnimalsController.updateAnimal)
 app.listen(port, () => {
     console.log(`Server started on port ${port}`)
 })
+
+exports.default = app;

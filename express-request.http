@@ -21,6 +21,7 @@ PUT http://localhost:3000/animals/3
 Content-Type: application/json
 
 {
+    "id": "1000",
     "name": "Dawid",
     "species": "Sigma",
     "age": 12,

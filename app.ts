@@ -1,21 +1,22 @@
-import express from 'express'
-import AnimalsController from './zookeeperii/controllers/AnimalsController.js'
+import express, { Request, Response } from 'express';
+import AnimalsController from './zookeeperii/controllers/AnimalsController';
 
-const app = express()
-const port = process.env.PORT || 3000
-app.use(express.json())
+const app = express();
+const port = process.env.PORT || 3000;
 
-app.get("/", (req,res) =>{
-    res.send("ok")
-})
+app.use(express.json());
 
-app.get("/animals", AnimalsController.getAllAnimals)
-app.get("/animals/:id", AnimalsController.getAnimalById)
-app.delete("/animals/:id", AnimalsController.deleteAnimal)
-app.put("/animals/put/:id", AnimalsController.updateAnimal)
+app.get("/", (req: Request, res: Response): void => {
+    res.send("ok");
+});
 
-app.listen(port, () => {
-    console.log(`Server started on port ${port}`)
-})
+app.get("/animals", AnimalsController.getAllAnimals);
+app.get("/animals/:id", AnimalsController.getAnimalById);
+app.delete("/animals/:id", AnimalsController.deleteAnimal);
+app.put("/animals/put/:id", AnimalsController.updateAnimal);
 
+app.listen(port, (): void => {
+    console.log(`Server started on port ${port}`);
+});
 
+export default app;
